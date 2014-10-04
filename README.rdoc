@@ -1,0 +1,7 @@
+###WELCOME TO TRAVELTRAX
+___________
+	This is my web app for WDI Project 1
+#SETUP INSTRUCTIONS
+```ruby
+$ rake db:migrate
+$ ....
