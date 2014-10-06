@@ -1,0 +1,25 @@
+<%= form_for @entry do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name, :autofocus => true %>
+  </div>
+  <div>
+    <%= f.label :date %>
+    <%= f.date_field :date %>
+  </div>
+  <div>
+    <%= f.label :entry %>
+    <%= f.text_field :entry %>
+  </div>
+    <div>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </div>
+  <div>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+  <label></label>
+
+  <%= f.submit %>
+<% end %>

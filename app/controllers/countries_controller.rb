@@ -19,6 +19,7 @@ class CountriesController < ApplicationController
 	end
 
 	def show
+		redirect_to country
 	end
 
 	private

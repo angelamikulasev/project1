@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 gem 'haml'
 gem 'bcrypt'
+gem 'country_state_select'
+gem 'carmen', '~> 1.0.1'
 
 group :development do
   gem 'pry-rails'

@@ -1,4 +1,9 @@
 ul li {
 	display:inline-block;
 	list-style: none;
+	backround-color: rgb(76, 81, 86);
+}
+
+html { 
+	backround-color: rgb(76, 81, 86);
 }
