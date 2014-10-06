@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root :to => 'pages#home'
 
-  resource :users
+  resources :users
   resources :countries
   resources :entries
 
