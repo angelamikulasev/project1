@@ -4,3 +4,9 @@
 		<li><%= link_to(country.country, country)%></li>
 	</ul>
 <% end %>
+
+<%# countries_array = Country.all.map { |country| [country.country, country.id] } %>
+<%#= form_tag '', @countries do |c| %>
+	<%#= c.label :country, 'Choose your country' %>
+	<%#= c.select :country, options_for_select(countries_array) %>
+<%# end %>

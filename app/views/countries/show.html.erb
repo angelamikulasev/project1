@@ -4,7 +4,22 @@
 <%= link_to 'Edit', edit_country_path(@country) %>
 <%= link_to 'Delete', @country, :method => :delete, :data => { :confirm => 'Are you sure? This will delete all posts written for this country.' } %>
 
+
+
 <h3>Entries</h3>
-<%# @entry.entries.each do |entry| %>
-  <%#= link_to entry.name, entry %>
-<%# end %>
+
+<% if @country.entries.present? %>
+  <article>
+    <% @country.entries.each do |entry| %>
+      <header>
+      	<h1><%= link_to entry.name, entry %></h1>
+      	<h2><%= entry.location %> - <%= entry.date %></h2>
+      </header>
+    	<p>
+    		<%= entry.entry %>
+    	</p>
+    <% end %>
+  </article>
+<% else %>
+	<p>There are no entries to display.</p>
+<% end %>

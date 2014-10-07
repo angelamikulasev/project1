@@ -1,5 +1,17 @@
-.hello {
+/*body {
+	background: url('background.jpg');
+}*/
+
+/*.hello {
 	text-align: right;
+}
+
+.container {
+	width: 320px;
+}
+
+.heading {
+	text-align: center;
 }
 
 body {
@@ -34,7 +46,7 @@ label {
   min-width: 150px;
   text-align: right;
 }
-/*
+
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -48,4 +60,5 @@ label {
  *
  *= require_tree .
  *= require_self
- */
+ 
+*/

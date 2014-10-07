@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to countries_path
     else
-    	render :text => 'idiot'
       #redirect_to login_path
     end
   end

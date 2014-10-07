@@ -34,7 +34,7 @@ gem 'geocoder'
 
 group :development do
   gem 'pry-rails'
-  gem 'pry-debugger'
+  gem 'pry-byebug'
   gem 'pry-stack_explorer'
 
   gem 'annotate'

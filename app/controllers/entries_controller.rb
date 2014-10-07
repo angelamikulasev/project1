@@ -1,6 +1,7 @@
 class EntriesController < ApplicationController
 	def index
 		@entries = Entry.all
+		# binding.pry
 	end
 
 	def new

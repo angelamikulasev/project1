@@ -50,6 +50,9 @@ Rails.application.routes.draw do
   get '/results' => 'countries#result'
   resources :entries
 
+  
+  resources :locations
+
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   delete '/login' => 'sessions#destroy'
