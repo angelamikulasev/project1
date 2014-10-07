@@ -6,9 +6,10 @@
 #  country    :string(255)
 #  created_at :datetime
 #  updated_at :datetime
+#  user_id    :integer
 #
 
 class Country < ActiveRecord::Base
 	has_many :entries
-	has_many :users, through: :entries
+	belongs_to :user
 end

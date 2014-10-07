@@ -10,6 +10,8 @@
 #  location   :string(255)
 #  lat        :float
 #  long       :float
+#  user_id    :integer
+#  country_id :integer
 #  created_at :datetime
 #  updated_at :datetime
 #

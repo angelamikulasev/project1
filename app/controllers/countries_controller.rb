@@ -1,7 +1,6 @@
 class CountriesController < ApplicationController
 	def index
 		@countries = @current_user.countries
-		raise "please help me jebus"
 	end
 
 	def new
@@ -9,7 +8,9 @@ class CountriesController < ApplicationController
 	end
 
 	def create
-		country = Country.create country_params
+		country = Country.new country_params
+		country.user = @current_user
+		country.save
 		redirect_to country
 	end
 
