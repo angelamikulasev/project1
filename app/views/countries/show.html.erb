@@ -1,1 +1,10 @@
-show.html.erb
+<h2><%= @country.country %></h2>
+<%#= image_tag @country.image %>
+
+<%= link_to 'Edit', edit_country_path(@country) %>
+<%= link_to 'Delete', @country, :method => :delete, :data => { :confirm => 'Are you sure? This will delete all posts written for this country.' } %>
+
+<h3>Entries</h3>
+<%# @entry.entries.each do |entry| %>
+  <%#= link_to entry.name, entry %>
+<%# end %>

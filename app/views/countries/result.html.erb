@@ -1,0 +1,5 @@
+<h2>view maps</h2>
+<%= form_tag '/results', :method => :get do %>
+  <%= text_field_tag(:location, nil, :placeholder => 'Which location?') %>
+  <%= submit_tag('Go') %>
+<% end %>

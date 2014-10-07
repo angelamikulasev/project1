@@ -1,0 +1,7 @@
+<% @entries.each do |entry| %>
+	<ul>
+		<li><%= link_to(entry.name, entry)%></li>
+		<br>
+		<li><%= link_to(entry.location, entry)%></li>
+	</ul>
+<% end %>

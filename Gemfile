@@ -30,6 +30,7 @@ gem 'haml'
 gem 'bcrypt'
 gem 'country_state_select'
 gem 'carmen', '~> 1.0.1'
+gem 'geocoder'
 
 group :development do
   gem 'pry-rails'

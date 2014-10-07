@@ -2,8 +2,8 @@ User.destroy_all
 Country.destroy_all
 Entry.destroy_all
 
-u1 = User.create(:name => 'Angela', :email => 'angela@angela.com', :password_digest => 'chicken')
-u2 = User.create(:name => 'Jacqui', :email => 'jacqui@jacqui.com', :password_digest => 'foot')
+u1 = User.create(:name => 'Angela', :email => 'angela@angela.com', :password => 'chicken', :password_confirmation => 'chicken')
+u2 = User.create(:name => 'Jacqui', :email => 'jacqui@jacqui.com', :password => 'foot', :password_confirmation => 'foot')
 
 c1 = Country.create(:country => 'Hong Kong')
 c2 = Country.create(:country => 'Australia')

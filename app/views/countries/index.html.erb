@@ -1,6 +1,6 @@
 <% @countries.each do |country| %>
 	<ul>
-		<li><%= image_tag(country.image, :class => 'thumbnail') %></li>
-		<li><%= link_to(country.name, country)%></li>
+		<!-- <li><%#= image_tag(country.image, :class => 'thumbnail') %></li> -->
+		<li><%= link_to(country.country, country)%></li>
 	</ul>
 <% end %>

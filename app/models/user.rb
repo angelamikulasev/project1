@@ -13,4 +13,6 @@
 class User < ActiveRecord::Base
 	has_many :entries
 	has_many :countries, through: :entries
+	validates :name, :uniqueness => true
+	has_secure_password
 end

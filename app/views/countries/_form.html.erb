@@ -1,14 +1,14 @@
 <!--   <div class="field">
     <%#= f.label :country %>
     <%#= f.country_select :country, prompt: 'Please select a country' %>
-  </div> -->
+  </div>  -->
 
 
 <%= form_for @country do |f| %>
-  <p>
+  <div>
     <%= f.label :country, prompt: 'Please select a country' %>
     <%= f.text_field :country %>
-  </p>
+  </div>
 
     <label></label>
   <%= f.submit %>
