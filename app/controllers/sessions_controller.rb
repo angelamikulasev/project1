@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to countries_path
     else
-      #redirect_to login_path
+      redirect_to login_path
     end
   end
 

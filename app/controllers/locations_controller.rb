@@ -1,13 +1,12 @@
 class LocationsController < ApplicationController
-	def index
-	  if params[:search].present?
-	    @locations = Location.near(params[:search], 50, :order => :distance)
-	  else
-	    @locations = Location.all
-	  end
-	end
+  def index
+    @entries = Entry.all
+    @markers = generate_markers
+  end
 
-	def show
-		@locations = Location.all
-	end
+  private
+
+  def generate_markers
+    @entries.map { |entry| [entry.name, entry.latitude, entry.longitude] }.to_json.html_safe
+  end
 end
