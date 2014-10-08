@@ -17,7 +17,7 @@
   </div>
   <div>
     <%= f.label :location %>
-    <%= f.text_field :location %>
+    <%= f.text_field :location, :size => 35, :class => "geocomplete" %>
   </div>
   <div>
     <%= f.label :country %>
@@ -26,3 +26,9 @@
 
   <%= f.submit %>
 <% end %>
+
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+<script src="jquery.geocomplete.js"></script>
+<script type="text/javascript">
+  $("input.geocomplete").geocomplete();
+</script>

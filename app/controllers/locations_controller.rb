@@ -8,5 +8,6 @@ class LocationsController < ApplicationController
 	end
 
 	def show
+		@locations = Location.all
 	end
 end
