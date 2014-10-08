@@ -33,6 +33,7 @@ gem 'country_state_select'
 gem 'carmen', '~> 1.0.1'
 gem 'geocoder'
 gem 'geocomplete_rails'
+gem 'rails_12factor'
 
 group :development do
   gem 'pry-rails'
