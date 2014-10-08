@@ -11,6 +11,7 @@ module ApplicationHelper
     	nav += "<li>" + link_to('Add Entry', new_entry_path) + "</li> "
     	# nav += "<li>" + link_to('View map', results_path) + "</li> "
     	nav += "<li>" + link_to('View map', locations_path) + "</li> "
+      nav += "<li>" + link_to('View all entries', entries_path) + "</li> "
    	 	# nav += "<li>" + link_to('Edit profile', edit_users_path) + "</li> "
     	nav += "<li>#{ link_to('Sign out', login_path, :method => :delete, :data => {:confirm => 'Are you sure?'}) }</li>"
  		 else

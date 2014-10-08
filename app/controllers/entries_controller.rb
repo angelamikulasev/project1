@@ -13,8 +13,21 @@ class EntriesController < ApplicationController
 		redirect_to entry
 	end
 
+	# def create
+	#     @entry = Entry.new user_params
+	# 	#if 
+	# 	@entry.save
+	# 		entry[:country_id] = @country.id
+	# 		redirect_to root_path
+	# 		@entry.save
+	# 	#else
+	# 		#render: new
+	# 	#end
+	# end
+
 	def edit
 		@entry = Entry.find params[:id]
+		@entry.save
 	end
 
 	def update
@@ -35,6 +48,6 @@ class EntriesController < ApplicationController
 
 	private
 	def entry_params
-		params.require(:entry).permit(:name, :date, :entry, :image, :location, :user_id, :country_id)
+		params.require(:entry).permit(:name, :date, :entry, :image, :address, :user_id, :country_id)
 	end
 end
