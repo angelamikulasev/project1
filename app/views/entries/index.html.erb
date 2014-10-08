@@ -1,17 +1,15 @@
-<% @entries.each do |entry| %>
+<!-- <%# @entries.each do |entry| %>
 	<ul>
-		<li><%= link_to(entry.name, entry)%></li>
-		<li><%= link_to(entry.entry, entry)%></li>
-		<li><%= link_to(entry.location, entry)%></li>
+		<li><%#= link_to(entry.name, entry)%></li>
 	</ul>
-<% end %>
+<%# end %> -->
 
 <h3>Entries</h3>
 
 <% if @entries.present? %>
  <ul>
 	<% @entries.each do |entry| %>
-	  <li><%= link_to entry.entry, entry %></li>
+	  <li><%= link_to(entry.name, entry)%></li>
 	<% end %>
  </ul>
 <% else %>

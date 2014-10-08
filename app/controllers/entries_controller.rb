@@ -9,7 +9,13 @@ class EntriesController < ApplicationController
 	end
 
 	def create
-		entry = Entry.create entry_params
+		entry = Entry.new entry_params
+		# binding.pry
+		entry.lat = params[:lat] # geocode method that returns the latititude
+		entry.long = params[:long] # geocode method that returns the longitude
+		@result = Geocoder.search(entry.lat).first
+		@result = Geocoder.search(entry.long).first
+		entry.save
 		redirect_to entry
 	end
 
