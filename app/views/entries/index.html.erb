@@ -9,7 +9,7 @@
 <% if @entries.present? %>
  <ul>
 	<% @entries.each do |entry| %>
-	  <li><%= entry.country.country %></li>
+	  <li><%= entry.country.country if entry.country.present? %></li>
 	  <li><%= link_to(entry.name, entry)%></li>
 	<% end %>
  </ul>
