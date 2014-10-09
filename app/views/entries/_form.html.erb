@@ -1,11 +1,11 @@
 <%= form_for @entry do |f| %>
   <div>
     <%= f.label :name %>
-    <%= f.text_field :name, :autofocus => true %>
+    <%= f.text_field :name, :autofocus => true, :class => 'form-control' %>
   </div>
   <div>
     <%= f.label :date %>
-    <%= f.date_field :date, :autofocus => true %>
+    <%= f.date_field :date, :autofocus => true, :class => 'form-control' %>
   </div>
   <div class="entry">
     <%= f.label :entry%>
@@ -15,10 +15,12 @@
     <%= f.label :image %>
     <%= f.text_field :image, :class => 'form-control' %>
   </div>
+  <label></label>
   <div>
     <%= f.label :address %>
-    <%= f.text_field :address, :size => 35, :class => "geocomplete", :class => 'form-control' %>
+    <%= f.text_field :address, :size => 70, :class => "geocomplete" %>
   </div>
+  <label></label>
   <div>
     <%= f.label :country %>
     <%= f.collection_select(:country_id, @current_user.countries, :id, :country, { :prompt => true }) %>
