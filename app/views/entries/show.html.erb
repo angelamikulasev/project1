@@ -1,20 +1,23 @@
-<h2><%= @entry.name %></h2>
+<div class="jumbotron">
+	<h2><%= @entry.name %></h2>
 
-<article>
-  <header>
-  	<h3><%= @entry.address %></h3>
-  </header>
-	<p>
-		<%= @entry.entry %>
-	</p>
-	<p>
-		<%= @entry.date %>	
-	</p>
-</article>
+	<article>
+	  <header>
+	  	<h3><%= @entry.address %></h3>
+	  </header>
+		<p>
+			<%= @entry.entry %>
+		</p>
+		<p>
+			<%= @entry.date %>	
+		</p>
+	</article>
+	<%= link_to 'Edit', edit_entry_path(@entry) %>
 
-<%= link_to 'Edit', edit_entry_path(@entry) %>
+	<%= link_to 'Delete', @entry, :method => :delete, :data => { :confirm => 'Are you sure?' }%>
+</div>
 
-<%= link_to 'Delete', @entry, :method => :delete, :data => { :confirm => 'Are you sure?' }%>
+
 
 <!-- <h3>Entries</h3>
 <%# @entry.countries.each do |country| %>

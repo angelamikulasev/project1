@@ -1,12 +1,14 @@
-<% @countries.each do |country| %>
+<!-- <div class="jumbotron">
+<#% @countries.each do |country| %>
 	<ul>
 		<!-- <li><%#= image_tag(country.image, :class => 'thumbnail') %></li> -->
-		<li><%= link_to(country.country, country)%></li>
+		<!-- <li><%#= link_to(country.country, country)%></li>
 	</ul>
+<%# end %>
+</div> -->
+
+<% @countries.each do |country| %>
+	<h3><%= link_to(country.country, country)%></h3>
+	<hr class="featurette-divider">
 <% end %>
 
-<%# countries_array = Country.all.map { |country| [country.country, country.id] } %>
-<%#= form_tag '', @countries do |c| %>
-	<%#= c.label :country, 'Choose your country' %>
-	<%#= c.select :country, options_for_select(countries_array) %>
-<%# end %>
