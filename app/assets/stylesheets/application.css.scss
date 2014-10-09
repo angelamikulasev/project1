@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
@@ -71,6 +74,56 @@ label {
  *= require_self
  
 */
+body {
+  background-color: beige;
+  background: url('background.jpg');
+  margin-top: 60px;
+}
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
+
+.form-control {
+  padding: 14px;
+  margin-top: 0px;
+  height: 45px;
+  font-size: 20px;
+}
+
+header li a {
+  text-align: left;
+}
+
+.navbar-inverse {
+  background-color: #C8C8C8;
+  /* border-color: #090909; */
+}
+
+li a {
+  font-size: 18px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.field_with_errors {
+  display: inline;
+  border: 1px solid red;
+}
+
+label {
+  padding-top: 10px;
+  min-width: 200px;
+  text-align: left;
+  font-size: 30px;
+/*  padding-bottom: 5px;*/
+  /*padding: 20px;*/
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+.row{
+  list-style:none;
+}
+
+

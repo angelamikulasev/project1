@@ -9,7 +9,7 @@ class EntriesController < ApplicationController
 	end
 
 	def create
-		entry = Entry.create entry_params
+		entry = Entry.create! entry_params.merge(user_id: @current_user.id)
 		redirect_to entry
 	end
 

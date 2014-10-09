@@ -3,7 +3,7 @@ module ApplicationHelper
   nav = ''
   	if @current_user.present?
       "<div class='welcome'>"
-    	 nav += "<li>Hello #{ @current_user.name }</li> "
+#    	 nav += "<li>Hello #{ @current_user.name }</li> "
       "</div>"
       "<div class='nav'>"
     	nav += "<li>" + link_to('Dashboard', countries_path) + "</li> "
@@ -13,7 +13,7 @@ module ApplicationHelper
     	nav += "<li>" + link_to('View map', locations_path) + "</li> "
       nav += "<li>" + link_to('View all entries', entries_path) + "</li> "
    	 	# nav += "<li>" + link_to('Edit profile', edit_users_path) + "</li> "
-    	nav += "<li>#{ link_to('Sign out', login_path, :method => :delete, :data => {:confirm => 'Are you sure?'}) }</li>"
+    	nav += "<li>#{ link_to('Sign out ' + @current_user.name , login_path, :method => :delete, :data => {:confirm => 'Are you sure?'}) }</li>"
  		 else
     	nav += "<li>#{ link_to('Sign up', new_user_path) }</li> "
     	nav += "<li>" + link_to('About', pages_path) + "</li> "

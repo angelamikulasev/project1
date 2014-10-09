@@ -1,6 +1,8 @@
 class LocationsController < ApplicationController
   def index
-    @entries = Entry.all
+    # @entries = Entry.all
+    @entries = @current_user.entries
+    # binding.pry
     @markers = generate_markers
   end
 
