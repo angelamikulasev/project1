@@ -9,22 +9,22 @@
   </div>
   <div class="entry">
     <%= f.label :entry%>
-    <%= f.text_area :entry, :autofocus => true, :cols => "80", :rows => "5" %>
+    <%= f.text_area :entry, :autofocus => true, :cols => "80", :rows => "5", :class => 'form-control' %>
   </div>
     <div>
     <%= f.label :image %>
-    <%= f.text_field :image %>
+    <%= f.text_field :image, :class => 'form-control' %>
   </div>
   <div>
     <%= f.label :address %>
-    <%= f.text_field :address, :size => 35, :class => "geocomplete" %>
+    <%= f.text_field :address, :size => 35, :class => "geocomplete", :class => 'form-control' %>
   </div>
   <div>
     <%= f.label :country %>
     <%= f.collection_select(:country_id, @current_user.countries, :id, :country, { :prompt => true }) %>
   </div>
 
-  <%= f.submit %>
+  <%= f.submit :class => 'btn btn-default' %>
 <% end %>
 
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>

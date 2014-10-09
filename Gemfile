@@ -33,6 +33,7 @@ gem 'carmen', '~> 1.0.1'
 gem 'geocoder'
 gem 'geocomplete_rails'
 gem 'rails_12factor'
+gem 'bootstrap-sass'
 
 group :development do
   gem 'pry-rails'

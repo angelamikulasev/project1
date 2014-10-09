@@ -4,7 +4,9 @@
 
 <style>
 	#map_wrapper {
-	    height: 400px;
+	    height: 500px;
+        width: 1200px;
+        padding:10px;
 	}
 
 	#map_canvas {
@@ -59,7 +61,7 @@
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(2);
+        this.setZoom(2.2);
         google.maps.event.removeListener(boundsListener);
     });
 }

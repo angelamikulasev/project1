@@ -2,6 +2,7 @@ class LocationsController < ApplicationController
   def index
     @entries = Entry.all
     @markers = generate_markers
+    @markers
   end
 
   private
