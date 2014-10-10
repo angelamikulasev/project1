@@ -16,7 +16,7 @@ module ApplicationHelper
     	nav += "<li>#{ link_to('Sign out ' + @current_user.name , login_path, :method => :delete, :data => {:confirm => 'Are you sure?'}) }</li>"
  		 else
     	nav += "<li>#{ link_to('Sign up', new_user_path) }</li> "
-    	nav += "<li>" + link_to('About', pages_path) + "</li> "
+    	# nav += "<li>" + link_to('About', pages_path) + "</li> "
     	nav += "<li>#{ link_to('Sign in', login_path) }</li>"
   	 end
   end

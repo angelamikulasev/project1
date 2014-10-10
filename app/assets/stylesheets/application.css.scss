@@ -83,10 +83,20 @@ html {
   background-size: cover;
 }
 
+html.pages-home {
+  background: none;
+  background-color: rgb(239, 239, 239);
+}
+
 body {
   background-color: transparent;
 /*  margin-top: 60px;
   margin: 0;*/
+}
+
+.navbar-inverse {
+  background-color: rgba(255, 255, 255, 0.96);
+  border: none;
 }
 
 h2 {
@@ -161,12 +171,6 @@ header li a {
   text-align: left;
 }
 
-.navbar-inverse {
-  background-color: rgba(56, 56, 56, 1);
-  /*background-color: #C8C8C8;*/
-  /* border-color: #090909; */
-}
-
 li a {
   font-size: 18px;
 }
@@ -191,6 +195,17 @@ label {
   /*background-color: rgba(255, 255, 255, 0.5);*/
 }
 
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  width: 100% \9;
+  width: 1400px;
+  height: auto;
+  line-height: 1;
+  /* max-width: 100% !important; */
+  height: auto;
+  /* display: block; */
+}
+
 .row{
   list-style:none;
 }
@@ -200,7 +215,7 @@ label {
 }
 
 .navbar-inverse {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(205, 220, 223, 1);
   border: none;
 }
 
@@ -212,12 +227,12 @@ label {
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
   color: #629CC0;
-  background-color: rgba(174, 42, 42, 0);
+  /*background-color: rgba(174, 42, 42, 0);*/
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #629CC0;
-background-color: transparent;
+  background-color: transparent;
 }
 
 label {
@@ -261,6 +276,7 @@ margin-top: 18px;
   width: 1400px;
   height: 600px;
   line-height: 1;
+  max-width:100% !important;
 }
 
 #map_wrapper {
