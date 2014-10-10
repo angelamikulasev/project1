@@ -75,11 +75,22 @@ label {
  
 */
 
+html {
+  background: url(Map.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-  background-color: rgb(199, 199, 199);
-  /* background: url('background.jpg'); */
+  background-color: transparent;
   margin-top: 60px;
   margin: 0;
+}
+
+body {
+  background-color: none !important;
 }
 
 h2 {
@@ -99,8 +110,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: inherit;
 }
 
+h1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
 .jumbotron p {
   font-size: 15px;
+}
+
+header h1 a {
+  font-size: 40px;
 }
 
 .form-control {
@@ -132,7 +157,8 @@ btn-default {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-top: 10px;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 
 header li a {
@@ -140,7 +166,8 @@ header li a {
 }
 
 .navbar-inverse {
-  background-color: #C8C8C8;
+  background-color: rgba(56, 56, 56, 1);
+  /*background-color: #C8C8C8;*/
   /* border-color: #090909; */
 }
 
@@ -184,6 +211,31 @@ label {
 .jumbotron{
   opacity: 0.95;
   margin-right: -110px;
+  background-color: rgba(255, 255, 255, 0.62);
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  color: #629CC0;
+  background-color: rgba(174, 42, 42, 0);
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #629CC0;
+background-color: transparent;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #3C3E3F;
+/* border-color: #357ebd; */
 }
 
 .thumbnail {
@@ -200,4 +252,27 @@ transition: all 0.2s ease-in-out;
 text-align: center;
 opacity: 0.8;
 margin-top: 18px;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  margin:auto;
+  /* float: left; */
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  width: 100% \9;
+  width: 1400px;
+  height: 600px;
+  line-height: 1;
+}
+
+#map_wrapper {
+    height: 400px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }

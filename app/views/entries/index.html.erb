@@ -1,13 +1,15 @@
-<% if @entries.present? %>
-	<% @entries.each do |entry| %>
-	  <li><%= entry.country.country if entry.country.present? %></li>
-	  <li><%= link_to(entry.name, entry)%></li>
-	  <hr class="featurette-divider">
-	<% end %>
-<% else %>
-	<p>There are no entries to display.</p>
-	<hr class="featurette-divider">
-<% end %>  
+<div class="jumbotron">
+	<% if @entries.present? %>
+		<% @entries.each do |entry| %>
+		  <li><%= entry.country.country if entry.country.present? %></li>
+		  <li><%= link_to(entry.name, entry)%></li>
+		  <hr class="featurette-divider">
+		<% end %>
+	<% else %>
+		<p>There are no entries to display.</p>
+		<hr class="featurette-divider">
+	<% end %>  
+</div
 
 <!-- START THE FEATURETTES -->
 <!-- 	<hr class="featurette-divider">

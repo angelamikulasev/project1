@@ -6,9 +6,10 @@
 	</ul>
 <%# end %>
 </div> -->
-
-<% @countries.each do |country| %>
-	<h3><%= link_to(country.country, country)%></h3>
-	<hr class="featurette-divider">
-<% end %>
+<div class="jumbotron">
+	<% @countries.each do |country| %>
+		<h3><%= link_to(country.country, country)%></h3>
+		<hr class="featurette-divider">
+	<% end %>
+</div>
 

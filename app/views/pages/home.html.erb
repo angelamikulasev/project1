@@ -7,8 +7,6 @@
 </div>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,7 +36,7 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
 
-
+<body>
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -55,8 +53,7 @@
             <div class="carousel-caption">
               <h1>TravelTrax</h1>
               <p>Travel Trax is a personal travel blog allowing users to recored their travel itinirary and contact information privately and in one place. Sign up for free and start keeping track of your travels today.</p>
-              <p><a class=" btn btn-lg btn-default" href="#" role="button">Sign up today</a></p>
-              <p> <%= link_to('Sign up today', new_user_path) %></p>
+              <p> <%= button_to('Sign up today', new_user_path, :method => :get, :class => "btn btn-lg btn-default") %></p>
             </div>
           </div>
         </div>
@@ -66,8 +63,7 @@
             <div class="carousel-caption">
               <h1>TravelTrax</h1>
               <p>Travel Trax is a personal travel blog allowing users to recored their travel itinirary and contact information privately and in one place. Sign up for free and start keeping track of your travels today.</p>
-              <p><a class=" btn btn-lg btn-default" href="#" role="button">Sign up today</a></p>
-              <p> <%= link_to('Sign up today', new_user_path) %></p>
+			  <%= button_to('Sign up today', new_user_path, :method => :get, :class => "btn btn-lg btn-default") %>
             </div>
           </div>
         </div>
@@ -77,8 +73,7 @@
             <div class="carousel-caption">
               <h1>TravelTrax</h1>
               <p>Travel Trax is a personal travel blog allowing users to recored their travel itinirary and contact information privately and in one place. Sign up for free and start keeping track of your travels today.</p>
-              <p><a class=" btn btn-lg btn-default" href="#" role="button">Sign up today</a></p>
-              <p> <%= link_to('Sign up today', new_user_path) %></p>
+			  <%= button_to('Sign up today', new_user_path, :method => :get, :class => "btn btn-lg btn-default") %>
             </div>
           </div>
         </div>
