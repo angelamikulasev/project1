@@ -1,7 +1,17 @@
-###WELCOME TO TRAVELTRAX
-___________
-	This is my web app for WDI Project 1
-#SETUP INSTRUCTIONS
-```ruby
-$ rake db:migrate
-$ ....
+Travel Trax
+=========
+
+This is Project 1 for WDI6.
+
+Gems
+--------------
+
+```sh
+gem 'pg'
+gem 'haml'
+gem 'bcrypt'
+gem 'geocoder'
+gem 'geocomplete_rails'
+gem 'rails_12factor'
+gem 'bootstrap-sass'
+```
