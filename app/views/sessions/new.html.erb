@@ -1,7 +1,32 @@
-<%= form_tag '/login' do %>
-	<%= label_tag :username %>
-	<%= text_field_tag :username, nil, :autofocus => true, :class => 'form-control' %>
-	<%= label_tag :password %>
-	<%= password_field_tag :password, nil, :class => 'form-control' %>
-	<%= submit_tag 'Login', :class => 'btn btn-default' %>
-<% end %>
+<div class="login_form">
+  <div class="panel-heading">
+    <div class="panel-title">Sign In</div>
+  </div>
+  <% if flash[:error] %>
+    <div id="error_explanation">
+      <h4>
+        <%= flash[:error] %>
+      </h4>
+    </div>
+  <% end %>
+  <%= form_tag login_path do %>
+    <div class="form-group">
+      <%= label_tag "username" %>
+      <%= text_field_tag :username, nil, :autofocus => true, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= label_tag "password" %>
+      <%= password_field_tag :password, nil, :class => 'form-control' %>
+    </div>
+    <label>
+      <div class="remember_me"></div>
+    </label>
+    <p></p>
+    <%= submit_tag 'Login', class: 'btn btn-default' %>
+    <div class="signuplink">
+      Don't have an account!
+      <%= link_to "Sign Up", new_user_path %>
+    </div>
+  <% end %>
+</div>
+
