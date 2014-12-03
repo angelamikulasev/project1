@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+@import url(http://fonts.googleapis.com/css?family=Kristi);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
 input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
@@ -10,54 +14,7 @@ input, button, select, textarea {
 }
 
 
-/*body {
-	background: url('background.jpg');
-}*/
-
-/*.hello {
-	text-align: right;
-}
-
-.container {
-	width: 320px;
-}
-
-.heading {
-	text-align: center;
-}
-
-body {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  padding: 10px;
-}
-
-nav a {
-  color: blue;
-}
-
-.container {
-  max-width: 960px;
-  margin: auto;
-}
-
-.field_with_errors {
-  display: inline;
-}
-
-label {
-  display: inline-block;
-  min-width: 150px;
-  text-align: right;
-}
+/*
 
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -75,38 +32,57 @@ label {
  
 */
 
-html {
+/*html {
   background: url(Map.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}*/
+
+html.pages-home, .sessions-new, .users-new {
+  background: url(home-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: rgb(239, 239, 239);
 }
 
-html.pages-home {
-  background: none;
-  background-color: rgb(239, 239, 239);
+.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 {
+  color: #DAD6D6;
+  font-family: Open Sans Condensed;
+  padding:0;
+}
+
+.col-md-10 {
+  width: none;
+  padding: 0;
+}
+
+.page-heading {
+  color: #DAD6D6;
+}
+
+.copyright.text-muted {
+  color: #DAD6D6;
 }
 
 body {
   background-color: transparent;
-/*  margin-top: 60px;
-  margin: 0;*/
 }
 
-.navbar-inverse {
-  background-color: rgba(255, 255, 255, 0.96);
+.navbar.navbar-default.navbar-static-top {
+  background-color: rgba(218, 214, 214, 0.7);
+  color: #DAD6D6;
   border: none;
+  letter-spacing: 1px;
+  font-family: Open Sans Condensed;
 }
 
 h2 {
   text-align: left;
-  font-size: 80px;
   margin-top: 0;
-}
-
-h3, .h3 {
-  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -141,7 +117,7 @@ header h1 a {
   font-size: 20px;
 }
 
-btn-default {
+.btn-default {
   margin-top: 10px;
 }
 
@@ -193,35 +169,16 @@ ul li {
 label {
   padding-top: 10px;
   min-width: 200px;
-  text-align: left;
-  font-size: 30px;
-/*  padding-bottom: 5px;*/
-  /*padding: 20px;*/
-  /*background-color: rgba(255, 255, 255, 0.5);*/
+  font-size: 16px;
 }
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  display: block;
-  width: 100% \9;
-  width: 1400px;
-  height: auto;
-  line-height: 1;
-  /* max-width: 100% !important; */
-  height: auto;
-  /* display: block; */
-}
-
-.row{
+.row col-md-10{
   list-style:none;
+  padding: 0;
 }
 
 .navbar {
    border-radius: 0px;
-}
-
-.navbar-inverse {
-  background-color: rgba(205, 220, 223, 1);
-  border: none;
 }
 
 .jumbotron{
@@ -232,7 +189,6 @@ label {
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
   color: #629CC0;
-  /*background-color: rgba(174, 42, 42, 0);*/
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
@@ -272,16 +228,6 @@ margin-top: 18px;
 
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
   margin:auto;
-  /* float: left; */
-}
-
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  display: block;
-  width: 100% \9;
-  width: 1400px;
-  height: 600px;
-  line-height: 1;
-  max-width:100% !important;
 }
 
 #map_wrapper {
@@ -292,4 +238,61 @@ margin-top: 18px;
     width: 100%;
     height: 100%;
     text-align: center;
+}
+
+.page-heading h1 {
+  font-size: 140px;
+  font-family: Kristi;
+}
+
+/*LOGIN AND SIGN UP*/
+
+.login_form {
+  border: rgb(203, 200, 200) 1px solid;
+  text-align: center;
+  padding: 10px 50px 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background-color: rgba(218, 214, 214, 0.7);
+}
+
+.signupform {
+  border: rgb(203, 200, 200) 1px solid;
+  text-align: center;
+  padding: 10px 50px 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background-color: rgba(218, 214, 214, 0.7);
+}
+
+.signupform h2 {
+  text-align: center;
+}
+
+.signupform input.btn.btn-default {
+  margin-left: 83px;
+}
+
+.signuplink a {
+  color: white;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: white;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: none; 
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
