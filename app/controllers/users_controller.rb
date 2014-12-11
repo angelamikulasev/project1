@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       session[:user_id] = @user.id
-      redirect_to dashboard_path, :flash => {:notice => "Welcome to Travel Trax #{ @user.firstname }"}
+      redirect_to countries_path, :flash => {:notice => "Welcome to Travel Trax #{ @user.name }"}
     else
       render :new
     end

@@ -1,7 +1,6 @@
 class EntriesController < ApplicationController
 	def index
 		@entries = Entry.all
-		# binding.pry
 	end
 
 	def new
@@ -48,6 +47,6 @@ class EntriesController < ApplicationController
 
 	private
 	def entry_params
-		params.require(:entry).permit(:name, :date, :entry, :image, :address, :user_id, :country_id)
+		params.require(:entry).permit(:name, :date, :entry, :image, :address, :user_id, :country_id, :country)
 	end
 end
