@@ -1,5 +1,7 @@
-# TravelTrax
+# (TravelTrax)[https://traveltrax.herokuapp.com/]
 General Assembly Web Development Immersive Project 1
+
+link: http://traveltrax.herokuapp.com/
 
 This application is a personal travel blog that allows you to track and document the places you have travelled to.
 
@@ -16,7 +18,7 @@ When a user is directed to the we application, they will be directed to a landin
 Through the dashboard, users are able to add countries, photos and create blog entries. Each entry has a location and that location is associated to a country. Users are also able to view the places theyve travelled to on a map.
 
 ## Models and Associations
-https://github.com/angelamikulasev/project1/blob/master/models_and_associations_diagram.png
+![](https://github.com/angelamikulasev/project1/blob/master/models_and_associations_diagram.png)
 
 ## Api's and Gems
 
@@ -25,3 +27,14 @@ https://github.com/angelamikulasev/project1/blob/master/models_and_associations_
 * [geocomplete_rails](https://github.com/guyisra/geocomplete_rails)
 * [annotate](https://github.com/ctran/annotate_models)
 * [bootstrap-sass](https://github.com/twbs/bootstrap-sass)
+
+
+## Inital designs
+Dashboard design
+![](https://github.com/angelamikulasev/project1/blob/master/dashboard_design.png)
+
+Login and signup designs
+![](https://github.com/angelamikulasev/project1/blob/master/login_signup_design.png)
+
+Blog posts designs
+![](https://github.com/angelamikulasev/project1/blob/master/blog_posts_design.png)
