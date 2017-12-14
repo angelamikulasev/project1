@@ -1,4 +1,4 @@
-# (TravelTrax)[https://traveltrax.herokuapp.com/]
+# TravelTrax
 General Assembly Web Development Immersive Project 1
 
 link: http://traveltrax.herokuapp.com/
