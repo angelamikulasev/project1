@@ -3,7 +3,7 @@ General Assembly Web Development Immersive Project 1
 
 link: http://traveltrax.herokuapp.com/
 
-This application is a personal travel blog that allows you to track and document the places you have travelled to.
+Travel Trax is a Ruby on Rails web application built to help you keep track of your travels, whether it be a daily adventure or a trip across the world.
 
 ## Problem and Solution
 Problem
